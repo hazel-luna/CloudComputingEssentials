@@ -1,0 +1,39 @@
+mkdir mailserver
+ls
+cd ./mailserver/
+mkdir example.com_user1
+mkdir example.com_user2
+mkdir example.net_user1
+mkdir example.net_user2
+mkdir mail_backup
+touch message1.eml
+mv ./mailserver/user1/message1.eml ./mailserver/mail_backup/
+ls
+mv ./message1.eml ./message_important.eml
+ls -R
+touch mail_config.txt
+chmod 600 mail_config.txt
+ls -l
+cd ./mail_backup
+touch old_message.eml
+mkdir old_user
+rm old_message.eml 
+rmdir old_user
+touch generate_emails.sh
+nano generate_emails.sh
+./generate_emails.sh
+history 20
+history | grep -r email
+uptime
+top
+df -h
+ls -l mail_config.txt
+ls -ld /mailserver /example.com/user1/
+ping google.com
+telnet google.com 25
+grep -r "example.com" /home/administrator/AMUDHAMOZHI/
+nano cleanup_empty_user_dirss.sh
+ ./cleanup_empty_user_dirss.sh
+ls -l | sort -t. -k2
+ ls -las
+tar -tzvf backup.tar.gz
